@@ -1,0 +1,64 @@
+show tables;
+desc STUDENT;
+SELECT * FROM STUDENT;
+SELECT * FROM COURSE;
+INSERT INTO COURSE VALUES
+('CSE101', 'DBMS'),
+('CSE102', 'OS'),
+('CSE103', 'CN'),
+('CSE104', 'AI');
+
+INSERT INTO STUDENT VALUES
+(1, 'Ravi', 'CSE101'),
+(2, 'Neha', 'CSE102'),
+(3, 'Amit', 'CSE101'),
+(4, 'Sara', NULL);
+-- INNER JOIN
+SELECT S.Roll_No, S.Name, C.Course_Name
+FROM STUDENT S
+INNER JOIN COURSE C
+ON S.Course_ID = C.Course_ID;
+
+-- LEFT OUTER JOIN
+SELECT S.Roll_No, S.Name, C.Course_Name
+FROM STUDENT S
+LEFT JOIN COURSE C
+ON S.Course_ID = C.Course_ID;
+
+-- RIGHT OUTER JOIN
+SELECT S.Name, C.Course_Name
+FROM STUDENT S
+RIGHT JOIN COURSE C
+ON S.Course_ID = C.Course_ID;
+
+-- FULL OUTER JOIN
+SELECT S.Name, C.Course_Name
+FROM STUDENT S
+LEFT JOIN COURSE C
+ON S.Course_ID = C.Course_ID
+
+UNION
+
+SELECT S.Name, C.Course_Name
+FROM STUDENT S
+RIGHT JOIN COURSE C
+ON S.Course_ID = C.Course_ID;
+
+-- SELF JOIN
+ALTER TABLE STUDENT ADD Mentor INT;
+UPDATE STUDENT SET Mentor = 1 WHERE Roll_No IN (2,3);
+
+SELECT S.Name AS Student, M.Name AS Mentor
+FROM STUDENT S
+JOIN STUDENT M
+ON S.Mentor = M.Roll_No;
+
+-- Join + WHERE
+SELECT S.Name, C.Course_Name
+FROM STUDENT S
+JOIN COURSE C
+ON S.Course_ID = C.Course_ID
+WHERE C.Course_Name = 'DBMS';
+
+
+

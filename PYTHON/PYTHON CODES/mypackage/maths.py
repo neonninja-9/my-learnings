@@ -1,0 +1,1 @@
+squar = lambda x:x*x
