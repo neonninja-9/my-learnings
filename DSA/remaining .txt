@@ -1,0 +1,11 @@
+QUEUE part 2
+heap part 2
+backtracking 
+hashing part 2
+all DP
+ST
+Graph3,4,5;
+stack part 2
+TC
+2D Array
+
