@@ -1,5 +1,3 @@
-
-````md
 # MY_LEARNINGS
 
 A structured repository containing my Computer Science learning notes and implementations, focused on writing clean, understandable, and reusable code.
@@ -140,23 +138,3 @@ LinkedIn: (https://www.linkedin.com/in/gourav-sharma-450298329/)
 ## ⭐ If you found this useful
 
 Consider starring ⭐ the repository — it motivates me to maintain it better.
-
-```
-
----
-
-# 🔥 Recommended Add-ons (to make it even more persuasive)
-If you want this repo to look *very* high-quality for GSoC, add:
-
-✅ 1. A `Progress.md`
-- Daily/weekly tracking
-
-✅ 2. A `CONTRIBUTING.md`
-- makes repo look OSS-style
-
-✅ 3. Folder-wise README
-Example:
-- `DSA/graphs/README.md` (contains list of problems + links)
-
----
-```
